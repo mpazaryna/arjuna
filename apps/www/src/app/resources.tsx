@@ -8,7 +8,7 @@ import {
 } from 'react';
 import { RESOURCES } from '../graphql';
 
-export function NxWelcome({ title }: { title: string }) {
+export function Resources({ title }: { title: string }) {
   const { loading, error, data } = useQuery(RESOURCES);
   console.log(data);
 
@@ -47,7 +47,6 @@ export function NxWelcome({ title }: { title: string }) {
               }) => (
                 <div key={resource.id}>
                   <h2>{resource.title}</h2>
-                  <p>{resource.content.html}</p>
                   <div
                     dangerouslySetInnerHTML={{ __html: resource.content.html }}
                   />
@@ -61,4 +60,4 @@ export function NxWelcome({ title }: { title: string }) {
   );
 }
 
-export default NxWelcome;
+export default Resources;

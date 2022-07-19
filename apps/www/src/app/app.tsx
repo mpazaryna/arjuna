@@ -1,6 +1,7 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import styles from './app.module.scss';
 import NxWelcome from './nx-welcome';
+import Resources from './resources';
 import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 
 const client = new ApolloClient({
@@ -12,7 +13,7 @@ export function App() {
   return (
     <>
       <ApolloProvider client={client}>
-        <NxWelcome title="www" />
+        <Resources title="www" />
       </ApolloProvider>
     </>
   );
