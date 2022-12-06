@@ -14,7 +14,12 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@arjuna/www/feature-resource-detail": [
+        "libs/www/feature-resource-detail/src/index.ts"
+      ],
+      "@arjuna/www/ui-shared": ["libs/www/ui-shared/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

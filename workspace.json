@@ -3,6 +3,8 @@
   "version": 2,
   "projects": {
     "www": "apps/www",
-    "www-e2e": "apps/www-e2e"
+    "www-e2e": "apps/www-e2e",
+    "www-feature-resource-detail": "libs/www/feature-resource-detail",
+    "www-ui-shared": "libs/www/ui-shared"
   }
 }
